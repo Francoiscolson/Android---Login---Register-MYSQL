@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#8E9B66">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textSize="60dp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="name"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Votre mot de passe"
+            android:inputType="textPassword"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/connecte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:layout_gravity="center"
+            android:onClick="onClickHome"/>
+        <Button
+            android:id="@+id/rechercherapide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recherche rapide"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="onClickHome"
+            />
+        <Button
+            android:id="@+id/inscription"
+            android:text="inscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onClickHome"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+</ScrollView>
